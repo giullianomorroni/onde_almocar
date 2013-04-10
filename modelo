@@ -1,0 +1,23 @@
+
+Domínio
+  Restaurante
+  Cliente
+  Perfil
+  Caracteristica
+  Endereço
+  Almoço (representa os lugares onde o cliente costuma almoçar)
+
+Atributos
+  Restaurante
+    nome, site, telefone, horário, descricao, Endereço, Perfil, Caracteristica
+   Endereço
+    logradouro, número, cep, latitude, longitude, bairro, cidade, estado
+   Cliente
+    nome, email, Perfil, Almoço[], Cliente[]
+   Perfil
+    preço, conforto, barulho, tipo, espaço
+   Caracteristica
+    distancia, primeira_vez, favorito
+
+
+
