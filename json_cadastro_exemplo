@@ -1,3 +1,16 @@
+
+#Clientes
+{cliente
+    nome: "Gil", 
+    email: "gil@gmail.com", 
+    PerfilCliente: {preço_medio: "20.00", conforto: "7", barulho: "2"}
+    Almoço[],
+    Cliente[],
+    Favorito[]
+}
+
+
+#Restaurantes
 {restaurante: 
     nome: "Teste", 
     site: "www.teste.com", 
