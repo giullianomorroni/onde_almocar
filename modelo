@@ -1,4 +1,3 @@
-
 Domínio
   Restaurante
   Cliente
@@ -15,7 +14,7 @@ Atributos
    Cliente
     nome, email, Perfil, Almoço[], Cliente[]
    Perfil
-    preço, conforto, barulho, tipo, espaço
+    preço_medio, conforto, barulho, categoria, espaço_proprio
    Caracteristica
     distancia, primeira_vez, favorito
 
