@@ -12,7 +12,7 @@ Atributos
    Endereço
     logradouro, número, cep, latitude, longitude, bairro, cidade, estado
    Cliente
-    nome, email, Perfil, Almoço[], Cliente[]
+    nome, email, Perfil, Almoço[], Cliente[], Favorito[]
    Perfil
     preço_medio, conforto, barulho, categoria, espaço_proprio
    Caracteristica
