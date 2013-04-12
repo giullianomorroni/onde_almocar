@@ -8,12 +8,14 @@ Domínio
 
 Atributos
   Restaurante
-    nome, site, telefone, horário, descricao, Endereço, Perfil, Caracteristica
+    nome, site, telefone, horário, descricao, Endereço, PerfilRestaurante, Caracteristica
    Endereço
     logradouro, número, cep, latitude, longitude, bairro, cidade, estado
    Cliente
-    nome, email, Perfil, Almoço[], Cliente[], Favorito[]
-   Perfil
+    nome, email, PerfilCliente, Almoço[], Cliente[], Favorito[]
+   PerfilCliente
+    preço_medio, conforto, barulho
+   PerfilRestaurante
     preço_medio, conforto, barulho, categoria, espaço_proprio
    Caracteristica
     distancia, primeira_vez, favorito
