@@ -1,0 +1,9 @@
+{restaurante: 
+    nome: "Teste", 
+    site: "www.teste.com", 
+    telefone: "11 45124512", 
+    horário: "0h - 20h", 
+    descricao: "Teste restaurante", 
+    Endereço: {logradouro: "Rua Nhengaibas", número: "800", cep: "03160040", latitude: "", longitude: "", bairro: "Vila Graciosa", cidade: "", estado: ""},
+    Perfil: {preço_medio: "10.00", conforto: "5", barulho: "5", categoria: "teste", espaço_proprio: "não"}
+}
