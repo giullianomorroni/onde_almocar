@@ -1,22 +1,22 @@
 
 #Clientes
-{cliente
-    nome: "Gil", 
-    email: "gil@gmail.com", 
-    PerfilCliente: {preço_medio: "20.00", conforto: "7", barulho: "2"}
-    Almoço[],
-    Cliente[],
-    Favorito[]
+{
+    "nome": "Gil", 
+    "email": "gil@gmail.com", 
+    "PerfilCliente": {"preço_medio": "20.00", "conforto": "7", "barulho": "2"}
+    "almocos":[],
+    "amigos":[],
+    "favoritos":[]
 }
 
 
 #Restaurantes
-{restaurante: 
-    nome: "Teste", 
-    site: "www.teste.com", 
-    telefone: "11 45124512", 
-    horário: "0h - 20h", 
-    descricao: "Teste restaurante", 
-    Endereço: {logradouro: "Rua Nhengaibas", número: "800", cep: "03160040", latitude: "", longitude: "", bairro: "Vila Graciosa", cidade: "", estado: ""},
-    PerfilRestaurante: {preço_medio: "10.00", conforto: "5", barulho: "5", categoria: "teste", espaço_proprio: "não"}
+{
+    "nome": "Teste", 
+    "site": "www.teste.com", 
+    "telefone": "11 45124512", 
+    "horário": "0h - 20h", 
+    "descricao": "Teste restaurante", 
+    "Endereço": {"logradouro": "Rua Nhengaibas", "número": "800", "cep": "03160040", "latitude": "", "longitude": "", "bairro": "Vila Graciosa", "cidade": "", "estado": ""},
+    "PerfilRestaurante": {"preço_medio": "10.00", "conforto": "5", "barulho": "5", "categoria": "teste", "tipo": "teste", "espaço_proprio": "não"}
 }
