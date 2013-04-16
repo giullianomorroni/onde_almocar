@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import json
 from endereco import Endereco
 from perfil_restaurante import PerfilRestaurante
 from caracteristica import Caracteristica
