@@ -42,6 +42,12 @@ def carga():
   pf.tipo = 'padaria'
   pf.espaco_proprio = True
   r.perfil_restaurante = pf
+  
+  c = Caracteristica()
+  c.distancia = 150.00
+  c.primeira_vez = False
+  c.favorito = True
+  r.caracteristica = c
   restaurantes.append(r)
 
   json_data = r.extrair_json()
@@ -82,6 +88,12 @@ def carga():
   pf.tipo = 'restaurante'
   pf.espaco_proprio = True
   r.perfil_restaurante = pf
+
+  c = Caracteristica()
+  c.distancia = 50.00
+  c.primeira_vez = True
+  c.favorito = False
+  r.caracteristica = c
   restaurantes.append(r)
 
   json_data = r.extrair_json()
@@ -122,6 +134,12 @@ def carga():
   pf.tipo = 'restaurante'
   pf.espaco_proprio = True
   r.perfil_restaurante = pf
+
+  c = Caracteristica()
+  c.distancia = 601.20
+  c.primeira_vez = True
+  c.favorito = False
+  r.caracteristica = c
   restaurantes.append(r)
 
   json_data = r.extrair_json()
@@ -158,8 +176,14 @@ def carga():
   pf.barulho = 5
   pf.categoria = 'típica'
   pf.tipo = 'restaurante'
-  pf.espaco_proprio = True
+  pf.espaco_proprio = False
   r.perfil_restaurante = pf
+
+  c = Caracteristica()
+  c.distancia = 400.00
+  c.primeira_vez = True
+  c.favorito = True
+  r.caracteristica = c
   restaurantes.append(r)
 
   json_data = r.extrair_json()
@@ -201,6 +225,12 @@ def carga():
   pf.tipo = 'lanchonete'
   pf.espaco_proprio = False
   r.perfil_restaurante = pf
+  
+  c = Caracteristica()
+  c.distancia = 700.00
+  c.primeira_vez = True
+  c.favorito = False
+  r.caracteristica = c
   restaurantes.append(r)
 
   json_data = r.extrair_json()
@@ -238,6 +268,12 @@ def carga():
   pf.tipo = 'restaurante'
   pf.espaco_proprio = True
   r.perfil_restaurante = pf
+  
+  c = Caracteristica()
+  c.distancia = 70.00
+  c.primeira_vez = True
+  c.favorito = False
+  r.caracteristica = c
   restaurantes.append(r)
 
   json_data = r.extrair_json()

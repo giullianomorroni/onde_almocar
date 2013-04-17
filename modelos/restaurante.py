@@ -14,6 +14,7 @@ class Restaurante():
   global endereco
   global perfil_restaurante
   global caracteristica
+  global pontuacao
 
   def __init__(self):
     self.nome = ''
@@ -24,6 +25,7 @@ class Restaurante():
     self.endereco = None
     self.perfil_restaurante = None
     self.caracteristica = None
+    self.pontuacao = 0
 
   def extrair_classe(self, json_data):
     aux = json.loads(json_data)

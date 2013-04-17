@@ -23,13 +23,18 @@ for r in restaurantes:
 minimizar = Minimizar();
 
 perfil_cliente = PerfilCliente();
-perfil_cliente.barulho = 5
-perfil_cliente.preco_medio = 20.0
+perfil_cliente.barulho = 7
+perfil_cliente.preco_medio = 10.0
 perfil_cliente.conforto = 5
+perfil_cliente.ordenar_barulho = True
+perfil_cliente.ordenar_conforto = True
+perfil_cliente.ordenar_preco_medio = True
+
+perfil_cliente.somente_favorito = False
+perfil_cliente.somente_espaco_proprio = False
 
 print '\nRestaurantes filtrados:'
 restaurantes = minimizar.executar(restaurantes, perfil_cliente)
+restaurantes = sorted(restaurantes, key=lambda r: r.pontuacao, reverse=True)
 for r in restaurantes:
-  print r.nome
-
-
+  print r.nome + ' ['+ str(r.pontuacao)+']' 

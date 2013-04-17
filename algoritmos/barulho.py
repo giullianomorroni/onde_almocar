@@ -3,12 +3,17 @@
 class Barulho():
 
   def minimizar(self, valores, perfilCliente):
+    
+    if not perfilCliente.ordenar_barulho:
+      return valores
+    
     resultado = []
     for v in valores:
       if (v.perfil_restaurante.barulho == perfilCliente.barulho):
-	resultado.append(v);
+	v.pontuacao += 1
       elif ( (v.perfil_restaurante.barulho+2) == perfilCliente.barulho):
-	resultado.append(v);
+	v.pontuacao += 0.5
       elif ( (v.perfil_restaurante.barulho-2) == perfilCliente.barulho):
-	resultado.append(v);
+	v.pontuacao += 0.5
+      resultado.append(v);
     return resultado;

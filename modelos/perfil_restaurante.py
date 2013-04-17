@@ -16,7 +16,7 @@ class PerfilRestaurante():
     self.barulho = 0
     self.categoria = ''
     self.tipo = ''
-    self.espaco_proprio = ''
+    self.espaco_proprio = False
 
   def extrair_classe(self, json_data):
     aux = json.loads(json_data)
