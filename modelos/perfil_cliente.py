@@ -16,6 +16,10 @@ class PerfilCliente():
   global somente_primeira_vez
   global somente_espaco_proprio
 
+  #não persistir esses valores...
+  global latitude
+  global longitude
+
   def __init__(self):
     self.preco_medio = 0.0
     self.conforto = 0
@@ -27,6 +31,8 @@ class PerfilCliente():
     self.somente_favorito = False
     self.somente_primeira_vez = False
     self.somente_espaco_proprio = False
+    self.latitude = None
+    self.longitude = None
 
   def extrair_classe(self, json_data):
     aux = json.loads(json_data)

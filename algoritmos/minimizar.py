@@ -17,9 +17,7 @@ class Minimizar():
     valores = conforto.minimizar(valores, perfilCliente)
     valores = preco_medio.minimizar(valores, perfilCliente)
     valores = distancia.minimizar(valores, perfilCliente)
-
     valores = self.exclusividade(valores, perfilCliente)
-
     return valores
 
   def exclusividade(self, valores, perfilCliente):
@@ -28,7 +26,6 @@ class Minimizar():
     exclusivos caso o cliente solicite preferencia
     de exclusividade.
     '''
-
     opcao_exclusividade = (perfilCliente.somente_favorito or perfilCliente.somente_primeira_vez or perfilCliente.somente_espaco_proprio);
 
     resultado = []

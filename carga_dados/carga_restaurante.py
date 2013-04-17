@@ -27,8 +27,8 @@ def carga():
   e.numero = '2250'
   e.complemento = ''
   e.cep = '01418100'
-  e.latitude = -23.568206,
-  e.longitude = -46.649441,
+  e.latitude = -23.568206
+  e.longitude = -46.649441
   e.bairro = 'Jardim Paulista'
   e.cidade = 'São Paulo'
   e.estado = 'São Paulo'
@@ -50,13 +50,6 @@ def carga():
   r.caracteristica = c
   restaurantes.append(r)
 
-  json_data = r.extrair_json()
-  #TODO conectar no mongo e persistir
-
-
-
-
-
 
 
 
@@ -73,8 +66,8 @@ def carga():
   e.numero = '760'
   e.complemento = ''
   e.cep = '01418100'
-  e.latitude = -23.567606,
-  e.longitude = -46.650985,
+  e.latitude = -23.567606
+  e.longitude = -46.650985
   e.bairro = 'Jardim Paulista'
   e.cidade = 'São Paulo'
   e.estado = 'São Paulo'
@@ -96,8 +89,6 @@ def carga():
   r.caracteristica = c
   restaurantes.append(r)
 
-  json_data = r.extrair_json()
-  #TODO conectar no mongo e persistir
 
 
 
@@ -119,8 +110,8 @@ def carga():
   e.numero = '388'
   e.complemento = ''
   e.cep = '01333010'
-  e.latitude = -23.567144,
-  e.longitude = -46.647348,
+  e.latitude = -23.567144
+  e.longitude = -46.647348
   e.bairro = 'Bela Vista'
   e.cidade = 'São Paulo'
   e.estado = 'São Paulo'
@@ -142,11 +133,6 @@ def carga():
   r.caracteristica = c
   restaurantes.append(r)
 
-  json_data = r.extrair_json()
-  #TODO conectar no mongo e persistir
-
-
-
 
 
 
@@ -163,8 +149,8 @@ def carga():
   e.numero = '615'
   e.complemento = ''
   e.cep = '01311000'
-  e.latitude = -23.567360, 
-  e.longitude = -46.649408,
+  e.latitude = -23.567360
+  e.longitude = -46.649408
   e.bairro = 'Bela Vista'
   e.cidade = 'São Paulo'
   e.estado = 'São Paulo'
@@ -186,10 +172,6 @@ def carga():
   r.caracteristica = c
   restaurantes.append(r)
 
-  json_data = r.extrair_json()
-  #TODO conectar no mongo e persistir
-
-
 
 
 
@@ -210,8 +192,8 @@ def carga():
   e.numero = '1000'
   e.complemento = ''
   e.cep = '01311000'
-  e.latitude = -23.565118,
-  e.longitude = -46.652069,
+  e.latitude = -23.565118
+  e.longitude = -46.652069
   e.bairro = 'Bela Vista'
   e.cidade = 'São Paulo'
   e.estado = 'São Paulo'
@@ -233,8 +215,6 @@ def carga():
   r.caracteristica = c
   restaurantes.append(r)
 
-  json_data = r.extrair_json()
-  #TODO conectar no mongo e persistir
 
 
 
@@ -253,8 +233,8 @@ def carga():
   e.numero = '2300'
   e.complemento = ''
   e.cep = '01418100'
-  e.latitude = -23.568206,
-  e.longitude = -46.649441,
+  e.latitude = -23.568206
+  e.longitude = -46.649441
   e.bairro = 'Jardim Paulista'
   e.cidade = 'São Paulo'
   e.estado = 'São Paulo'
@@ -275,9 +255,6 @@ def carga():
   c.favorito = False
   r.caracteristica = c
   restaurantes.append(r)
-
-  json_data = r.extrair_json()
-  #TODO conectar no mongo e persistir
 
 
   return restaurantes

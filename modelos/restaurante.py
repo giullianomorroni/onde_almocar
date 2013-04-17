@@ -8,6 +8,7 @@ class Restaurante():
 
   global nome
   global site
+  global email
   global telefone
   global horario
   global descricao
@@ -19,6 +20,7 @@ class Restaurante():
   def __init__(self):
     self.nome = ''
     self.site = ''
+    self.email = ''
     self.telefone = ''
     self.horario = ''
     self.descricao = ''
