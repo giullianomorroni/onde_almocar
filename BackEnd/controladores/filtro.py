@@ -25,7 +25,7 @@ class Filtro():
     self.latitude = 0
     self.longitude = 0
 
-  def montarFiltro(self, json_data)
+  def montarFiltro(self, json_data):
     self.preco_medio = json_data['preco_medio']
     self.tipos = json_data['tipos']
     self.salao_proprio = json_data['salao_proprio']

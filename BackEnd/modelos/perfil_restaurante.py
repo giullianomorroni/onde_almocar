@@ -40,4 +40,4 @@ class PerfilRestaurante():
       },
       ensure_ascii=False
     )
-    return js_dt
+    return json.loads(js_dt)
