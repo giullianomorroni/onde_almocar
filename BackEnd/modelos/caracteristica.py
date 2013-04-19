@@ -25,6 +25,7 @@ class Caracteristica():
 	"distancia":self.distancia, 
 	"primeira_vez":self.primeira_vez, 
 	"favorito": self.favorito
-      }
+      },
+      ensure_ascii=False
     )
     return js_dt

@@ -44,6 +44,7 @@ class Cliente():
 	"almocos": self.almocos,
 	"amigos": self.amigos,
 	"favoritos": self.favoritos,
-      }
+      },
+      ensure_ascii=False
     )
     return js_dt

@@ -68,6 +68,7 @@ class Restaurante():
 	"endereco" : _end,
 	"perfil_restaurante" : _pf,
 	"caracteristica" : _caract
-      }
+      },
+      ensure_ascii=False
     )
     return js_dt

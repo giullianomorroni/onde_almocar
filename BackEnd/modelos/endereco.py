@@ -30,8 +30,8 @@ class Endereco():
     self.numero = aux['numero']
     self.complemento = aux['complemento']
     self.cep = aux['cep']
-    self.latitude = aux['latitude']
-    self.longitude = aux['longitude']
+    self.longitude = aux['loc']['lng']
+    self.latitude = aux['loc']['lat']
     self.bairro = aux['bairro']
     self.cidade = aux['cidade']
     self.estado = aux['estado']
@@ -44,11 +44,11 @@ class Endereco():
 	"numero" : self.numero,
 	"complemento" : self.complemento,
 	"cep" : self.cep,
-	"latitude" : self.latitude,
-	"longitude" : self.longitude,
+	"loc" : { "lng" : self.longitude, "lat" : self.latitude},
 	"bairro" : self.bairro,
 	"cidade" : self.cidade,
 	"estado" : self.estado
-      }
+      }, 
+      ensure_ascii=False
     )
     return js_dt

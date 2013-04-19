@@ -47,6 +47,7 @@ class PerfilCliente():
 	"preco_medio":self.preco_medio, 
 	"barulho":self.barulho, 
 	"conforto": self.conforto
-      }
+      },
+      ensure_ascii=False
     )
     return js_dt

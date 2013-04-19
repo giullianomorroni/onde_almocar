@@ -10,6 +10,8 @@ class Filtro():
   global nivel_conforto
   global favoritos
   global busca_exata
+  global latitude
+  global longitude
 
   def __init__(self):
     self.preco_medio = None
@@ -18,8 +20,10 @@ class Filtro():
     self.quant_pessoas = None
     self.nivel_silencio = None
     self.nivel_conforto = None
-    self.favoritos = []
+    self.favoritos = None
     self.busca_exata = None
+    self.latitude = 0
+    self.longitude = 0
 
   def montarFiltro(self, json_data)
     self.preco_medio = json_data['preco_medio']
@@ -30,3 +34,6 @@ class Filtro():
     self.nivel_conforto = json_data['nivel_conforto']
     self.favoritos = json_data['favoritos']
     self.busca_exata = json_data['busca_exata']
+    self.latitude = json_data['latitude']
+    self.longitude = json_data['longitude']
+    return self

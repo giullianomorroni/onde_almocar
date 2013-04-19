@@ -30,7 +30,7 @@ def carga():
   e.latitude = -23.568206
   e.longitude = -46.649441
   e.bairro = 'Jardim Paulista'
-  e.cidade = 'São Paulo'
+  e.cidade = unicode('São Paulo','utf-8')
   e.estado = 'São Paulo'
   r.endereco = e;
 
@@ -213,6 +213,7 @@ def carga():
   c.primeira_vez = True
   c.favorito = False
   r.caracteristica = c
+  print r.extrair_json()
   restaurantes.append(r)
 
 

@@ -37,6 +37,7 @@ class PerfilRestaurante():
 	"categoria" : self.categoria,
 	"tipo" : self.tipo,
 	"espaco_proprio" : self.espaco_proprio
-      }
+      },
+      ensure_ascii=False
     )
     return js_dt
