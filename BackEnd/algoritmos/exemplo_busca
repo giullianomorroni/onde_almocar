@@ -1,0 +1,20 @@
+
+Filtro completo:
+
+  preco_medio = ?
+  tipos [?, ?]
+  salao_proprio = ?
+  quant_pessoas = ?
+  nivel_silencio = ?
+  nivel_conforto = ?
+  favoritos = ?
+  busca_exata = ?
+
+
+Resultado da busca:
+  [ 
+    { pontos: 8, {resurante 1}, {caracteristicas} },
+    { pontos: 4, {resurante 2}, {caracteristicas} },
+    { pontos: 1, {resurante 3}, {caracteristicas} },
+    { pontos: 0, {resurante 4}, {caracteristicas} },
+  ]
