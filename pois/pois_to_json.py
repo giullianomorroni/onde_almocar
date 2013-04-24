@@ -10,6 +10,7 @@ def execute():
   x = []
   for linha in origem:
     r = linha.split('#')
+    print r
     nome 	= r[0]
     endereco 	= r[1]
     numero 	= r[2]
