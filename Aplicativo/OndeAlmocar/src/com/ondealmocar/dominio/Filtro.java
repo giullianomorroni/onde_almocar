@@ -1,6 +1,6 @@
-package br.com.ondealmocar;
+package com.ondealmocar.dominio;
 
-import java.math.BigDecimal;
+import java.util.List;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -8,13 +8,11 @@ import org.json.JSONObject;
 public class Filtro implements ConversorJson {
 	
   private List<String> tipos;
-  private Boolean salaoProprio;
   private String quantPessoas;
   private List<String> favoritos;
   private Boolean buscaExata;
   private Double latitude;
   private Double longitude;
-  
   
   public String json() {
 		JSONObject jsonObject = new JSONObject();
@@ -34,7 +32,7 @@ public class Filtro implements ConversorJson {
 	public void entidade(String json) {
 		try {
 			JSONObject jsonObject = new JSONObject(json);
-			this.precoMedio = new BigDecimal(jsonObject.optDouble("preco_medio"));
+			this.latitude = jsonObject.optDouble("latitude");
 			//TODO TERMINAR....
 		} catch (JSONException e) {
 			e.printStackTrace();

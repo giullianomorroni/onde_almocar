@@ -1,4 +1,4 @@
-package br.com.ondealmocar;
+package com.ondealmocar.dominio;
 
 import org.json.JSONException;
 import org.json.JSONObject;

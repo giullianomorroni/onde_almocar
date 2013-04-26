@@ -1,4 +1,4 @@
-package br.com.ondealmocar;
+package com.ondealmocar.dominio;
 
 import java.math.BigDecimal;
 

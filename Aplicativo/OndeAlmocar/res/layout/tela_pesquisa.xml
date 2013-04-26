@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="180dp"
+	    android:orientation="horizontal" >
+
+	    <SlidingDrawer
+	        android:id="@+id/slidingDrawerTipos"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:content="@+id/contentTipo"
+	        android:handle="@+id/handleTipo" >
+
+	        <Button
+	            android:id="@+id/handleTipo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Tipos" />
+	
+	        <LinearLayout
+	            android:id="@+id/contentTipo"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" 
+	            android:orientation="horizontal" >
+	
+	            <TextView 
+	                android:id="@+id/content"
+	                android:layout_width="match_parent"
+	            	android:layout_height="match_parent"
+	                android:text="Tipos" />
+
+   	            <CheckBox android:text="Restaurantes" 
+   	                android:layout_width="match_parent"
+	            	android:layout_height="match_parent"/>
+   	            <CheckBox android:text="Lanchonetes" 
+   	                android:layout_width="match_parent"
+	            	android:layout_height="match_parent"/>
+   	            <CheckBox android:text="Padarias" 
+   	                android:layout_width="match_parent"
+	            	android:layout_height="match_parent"/>
+   	            <CheckBox android:text="Botecos"
+					android:layout_width="match_parent"
+	            	android:layout_height="match_parent"/>
+
+	        </LinearLayout>
+	    </SlidingDrawer>
+    </LinearLayout>
+
+    
+    
+    
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="140dp"
+	    android:orientation="horizontal" >
+	    <SlidingDrawer
+	        android:id="@+id/slidingDrawerSalaoProprio"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:content="@+id/contentSP"
+	        android:handle="@+id/handleSP" >
+
+	        <Button
+	            android:id="@+id/handleSP"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Salão Próprio" />
+	
+	        <LinearLayout
+	            android:id="@+id/contentSP"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" 
+	            android:orientation="horizontal" >
+
+	            <TextView 
+	                android:id="@+id/content"
+	              	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	                android:text="Salão Próprio" />
+
+	            <RadioGroup 
+	                android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content" >
+		                <RadioButton android:text="Sim" 
+		                    android:layout_width="wrap_content"
+		            		android:layout_height="wrap_content"/>
+		                <RadioButton android:text="Não"
+		                    android:layout_width="wrap_content"
+		            		android:layout_height="wrap_content"/>
+		                <RadioButton android:text="Indiferente"
+		                    android:layout_width="wrap_content"
+		            		android:layout_height="wrap_content"/>
+	            </RadioGroup>
+
+	        </LinearLayout>
+	    </SlidingDrawer>
+	</LinearLayout>   
+    
+    
+    
+   	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="120dp"
+	    android:orientation="horizontal" >
+	    <SlidingDrawer
+	        android:id="@+id/slidingDrawerPrecoMedio"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:content="@+id/contentPrecoMedio"
+	        android:handle="@+id/handlePrecoMedio" >
+
+	        <Button
+	            android:id="@+id/handlePrecoMedio"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Preço Médio" />
+	
+	        <LinearLayout
+	            android:id="@+id/contentPrecoMedio"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" 
+	            android:orientation="horizontal" >
+
+	            <TextView 
+	                android:id="@+id/contentPc"
+	              	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	                android:text="Preço Médio" />
+
+	            <EditText 
+	                android:id="@+id/editTextPrecoMedio"
+	                android:numeric="decimal"
+	                android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content" />
+	        </LinearLayout>
+	    </SlidingDrawer>
+	</LinearLayout>
+
+   	
+   	
+   	
+   	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="100dp"
+	    android:orientation="horizontal" >
+	    <SlidingDrawer
+	        android:id="@+id/slidingDrawerQuantPessoas"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:content="@+id/contentQuantPessoas"
+	        android:handle="@+id/handleQuantPessoas" >
+
+	        <Button
+	            android:id="@+id/handleQuantPessoas"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Quantidade de Pessoas" />
+	
+	        <LinearLayout
+	            android:id="@+id/contentQuantPessoas"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" 
+	            android:orientation="horizontal" >
+
+	            <TextView 
+	                android:id="@+id/contentPc"
+	              	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	                android:text="Quantidade de Pessoas" />
+
+	            <EditText 
+	                android:id="@+id/editTextQuantPessoas"
+	                android:numeric="decimal"
+	                android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content" />
+	        </LinearLayout>
+	    </SlidingDrawer>
+	</LinearLayout>
+
+   	
+   	
+   	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginBottom="60dp"
+	    android:orientation="horizontal" >
+	    <SlidingDrawer
+	        android:id="@+id/slidingDrawerQualidade"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:content="@+id/contentQualidade"
+	        android:handle="@+id/handleQualidade" >
+
+	        <Button
+	            android:id="@+id/handleQualidade"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Qualidade" />
+	
+	        <LinearLayout
+	            android:id="@+id/contentQualidade"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" 
+	            android:orientation="horizontal" >
+
+	            <TextView 
+	                android:id="@+id/contentQualidade"
+	              	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	                android:text="Qualidade Silêncio" />
+
+	            <RatingBar 
+	                android:id="@+id/ratingQualidadeSilencio"
+	              	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:rating="3" />
+	            
+   	            <TextView 
+	                android:id="@+id/contentConforto"
+	              	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	                android:text="Qualidade Conforto" />
+
+   	            <RatingBar 
+	                android:id="@+id/ratingQualidadeConforto"
+	              	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:rating="3" />            
+	        </LinearLayout>
+	    </SlidingDrawer>
+	</LinearLayout>   	
+
+</RelativeLayout>

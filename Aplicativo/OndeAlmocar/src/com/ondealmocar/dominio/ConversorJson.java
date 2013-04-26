@@ -1,4 +1,4 @@
-package br.com.ondealmocar;
+package com.ondealmocar.dominio;
 
 public interface ConversorJson {
 
