@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/pesquisar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp"
+        android:onClick="iniciarPesquisa"
+        android:text="Pesquisar" />
+
+    <Button
+        android:id="@+id/favoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pesquisar"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp"
+        android:onClick="favoritos"
+        android:text="Meus Favoritos" />    
+
+    <Button
+        android:id="@+id/novoRestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/favoritos"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp"
+        android:onClick="novoRestaurante"
+        android:text="Novo Restaurante" />
+
+    <Button
+        android:id="@+id/meuPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/novoRestaurante"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp"
+        android:onClick="meuPerfil"
+        android:text="Meu Perfil" />
+        
+</RelativeLayout>

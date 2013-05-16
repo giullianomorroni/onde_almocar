@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:text="Logradouro"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/logradouro"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>
+
+    <TextView
+        android:text="Número"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/numero"
+        android:textIsSelectable="false"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>
+    
+    <TextView
+        android:text="Complemento"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/complemento"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>
+
+    <TextView
+        android:text="Bairro"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/bairro"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>
+    
+    <TextView
+        android:text="Cidade"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/cidade"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>    
+    
+    <TextView
+        android:text="Estado"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/estado"
+        android:textIsSelectable="false"
+        android:inputType="numberSigned"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>
+    
+    <Button
+        android:id="@+id/passo_3"
+        android:onClick="cadastrarRestaurante"
+        android:text="Concluir"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+</LinearLayout>

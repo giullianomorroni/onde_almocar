@@ -13,9 +13,9 @@ public class Cliente implements ConversorJson {
 	private String nome;
 	private String email;
 	private PerfilCliente perfil;
-	private List<Restaurante> almocos = new ArrayList<Restaurante>();
+	private List<Estabelecimento> almocos = new ArrayList<Estabelecimento>();
 	private List<Cliente> amigos = new ArrayList<Cliente>();
-	private List<Restaurante> favoritos = new ArrayList<Restaurante>();
+	private List<Estabelecimento> favoritos = new ArrayList<Estabelecimento>();
 
 	public String json() {
 		JSONObject jsonObject = new JSONObject();
@@ -27,7 +27,7 @@ public class Cliente implements ConversorJson {
 			jsonObject.put("perfil_cliente", this.perfil);
 	
 			JSONArray jsonArray = new JSONArray();
-			for (Restaurante restaurante : almocos)
+			for (Estabelecimento restaurante : almocos)
 				jsonArray.put(restaurante.json());
 			jsonObject.put("almocos", jsonArray);
 	
@@ -37,7 +37,7 @@ public class Cliente implements ConversorJson {
 			jsonObject.put("amigos", jsonArray);
 	
 			jsonArray = new JSONArray();
-			for (Restaurante restaurante : favoritos)
+			for (Estabelecimento restaurante : favoritos)
 				jsonArray.put(restaurante.json());
 			jsonObject.put("favoritos", jsonArray);
 		} catch (JSONException e) {
@@ -63,7 +63,7 @@ public class Cliente implements ConversorJson {
 			JSONArray jsonArrayAlmocos = jsonObject.optJSONArray("almocos");
 			for (int i=0; i < jsonArrayAlmocos.length(); i++) {
 				JSONObject jsonAlmoco = jsonArrayAlmocos.getJSONObject(i);
-				Restaurante restaurante = new Restaurante();
+				Estabelecimento restaurante = new Estabelecimento();
 				restaurante.entidade(jsonAlmoco.toString());
 				this.almocos.add(restaurante);
 			}
@@ -71,7 +71,7 @@ public class Cliente implements ConversorJson {
 			JSONArray jsonArrayFavoritos = jsonObject.optJSONArray("favoritos");
 			for (int i=0; i < jsonArrayFavoritos.length(); i++) {
 				JSONObject jsonFavorito = jsonArrayFavoritos.getJSONObject(i);
-				Restaurante restaurante = new Restaurante();
+				Estabelecimento restaurante = new Estabelecimento();
 				restaurante.entidade(jsonFavorito.toString());
 				this.favoritos.add(restaurante);
 			}
@@ -120,11 +120,11 @@ public class Cliente implements ConversorJson {
 		this.perfil = perfil;
 	}
 
-	public List<Restaurante> getAlmocos() {
+	public List<Estabelecimento> getAlmocos() {
 		return almocos;
 	}
 
-	public void setAlmocos(List<Restaurante> almocos) {
+	public void setAlmocos(List<Estabelecimento> almocos) {
 		this.almocos = almocos;
 	}
 
@@ -136,11 +136,11 @@ public class Cliente implements ConversorJson {
 		this.amigos = amigos;
 	}
 
-	public List<Restaurante> getFavoritos() {
+	public List<Estabelecimento> getFavoritos() {
 		return favoritos;
 	}
 
-	public void setFavoritos(List<Restaurante> favoritos) {
+	public void setFavoritos(List<Estabelecimento> favoritos) {
 		this.favoritos = favoritos;
 	}
 

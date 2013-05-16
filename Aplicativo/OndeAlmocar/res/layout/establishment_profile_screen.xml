@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+		
+    <TextView
+        android:text="Preço Médio"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/precoMedio"
+        android:textIsSelectable="false"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>	
+	
+    <TextView
+        android:text="Conforto"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/conforto"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>	
+	
+    <TextView
+        android:text="Barulho"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/barulho"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>	
+	
+    <TextView
+        android:text="Categoria"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/categoria"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>	
+	
+    <TextView
+        android:text="Tipo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/tipo"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>
+	
+    <TextView
+        android:text="Espaço Próprio"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/espacoProprio"
+        android:textIsSelectable="false"
+        android:inputType="numberSigned"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>
+    
+    <Button
+        android:id="@+id/passo_3"
+        android:onClick="passo3"
+        android:text="Endereço"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+</LinearLayout>

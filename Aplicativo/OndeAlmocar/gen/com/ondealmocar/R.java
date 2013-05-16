@@ -10,54 +10,87 @@ package com.ondealmocar;
 public final class R {
     public static final class attr {
     }
+    public static final class dimen {
+        /**  Default screen margins, per the Android Design guidelines. 
+
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+    
+         */
+        public static final int activity_horizontal_margin=0x7f040000;
+        public static final int activity_vertical_margin=0x7f040001;
+    }
     public static final class drawable {
         public static final int ic_action_search=0x7f020000;
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int buttonLogin=0x7f070002;
-        public static final int content=0x7f070006;
-        public static final int contentConforto=0x7f070017;
-        public static final int contentPc=0x7f07000d;
-        public static final int contentPrecoMedio=0x7f07000b;
-        public static final int contentQualidade=0x7f070014;
-        public static final int contentQuantPessoas=0x7f070010;
-        public static final int contentSP=0x7f070008;
-        public static final int contentTipo=0x7f070004;
-        public static final int editText1=0x7f070000;
-        public static final int editTextPrecoMedio=0x7f07000e;
-        public static final int editTextQuantPessoas=0x7f070012;
-        public static final int handlePrecoMedio=0x7f07000c;
-        public static final int handleQualidade=0x7f070015;
-        public static final int handleQuantPessoas=0x7f070011;
-        public static final int handleSP=0x7f070009;
-        public static final int handleTipo=0x7f070005;
-        public static final int menu_settings=0x7f070019;
-        public static final int ratingQualidadeConforto=0x7f070018;
-        public static final int ratingQualidadeSilencio=0x7f070016;
-        public static final int slidingDrawerPrecoMedio=0x7f07000a;
-        public static final int slidingDrawerQualidade=0x7f070013;
-        public static final int slidingDrawerQuantPessoas=0x7f07000f;
-        public static final int slidingDrawerSalaoProprio=0x7f070007;
-        public static final int slidingDrawerTipos=0x7f070003;
-        public static final int textViewLogin=0x7f070001;
+        public static final int action_settings=0x7f080024;
+        public static final int bairro=0x7f080010;
+        public static final int barulho=0x7f080014;
+        public static final int buttonLogin=0x7f080002;
+        public static final int categoria=0x7f080015;
+        public static final int cidade=0x7f080011;
+        public static final int complemento=0x7f08000f;
+        public static final int conforto=0x7f080004;
+        public static final int descricao=0x7f08001d;
+        public static final int editText1=0x7f080000;
+        public static final int email=0x7f08001a;
+        public static final int espacoProprio=0x7f080017;
+        public static final int estado=0x7f080012;
+        public static final int favoritos=0x7f080020;
+        public static final int horario=0x7f08001c;
+        public static final int logradouro=0x7f08000d;
+        public static final int meuPerfil=0x7f080022;
+        public static final int nome=0x7f080018;
+        public static final int novoRestaurante=0x7f080021;
+        public static final int numero=0x7f08000e;
+        public static final int ordenarBarulho=0x7f080007;
+        public static final int ordenarConforto=0x7f080008;
+        public static final int ordenarDistancia=0x7f080006;
+        public static final int ordenarPrecoMedio=0x7f080009;
+        public static final int passo_2=0x7f08001e;
+        public static final int passo_3=0x7f080013;
+        public static final int pesquisar=0x7f08001f;
+        public static final int precoMedio=0x7f080003;
+        public static final int silencio=0x7f080005;
+        public static final int site=0x7f080019;
+        public static final int somenteEspacoProprio=0x7f08000c;
+        public static final int somenteFavorito=0x7f08000a;
+        public static final int somentePrimeiraVez=0x7f08000b;
+        public static final int tela_principal=0x7f080023;
+        public static final int telefone=0x7f08001b;
+        public static final int textViewLogin=0x7f080001;
+        public static final int tipo=0x7f080016;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int tela_pesquisa=0x7f030001;
+        public static final int authenticate_screen=0x7f030000;
+        public static final int client_profile=0x7f030001;
+        public static final int establishment_address_screen=0x7f030002;
+        public static final int establishment_filter_screen=0x7f030003;
+        public static final int establishment_profile_screen=0x7f030004;
+        public static final int establishment_screen=0x7f030005;
+        public static final int favorite_screen=0x7f030006;
+        public static final int main_screen=0x7f030007;
     }
     public static final class menu {
-        public static final int activity_main=0x7f060000;
+        public static final int activity_main=0x7f070000;
+        public static final int filter=0x7f070001;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
-        public static final int email=0x7f040004;
-        public static final int hello_world=0x7f040001;
-        public static final int login=0x7f040005;
-        public static final int menu_settings=0x7f040002;
-        public static final int title_activity_main=0x7f040003;
+        public static final int action_settings=0x7f050007;
+        public static final int app_name=0x7f050000;
+        public static final int email=0x7f050004;
+        public static final int hello_world=0x7f050001;
+        public static final int login=0x7f050005;
+        public static final int menu_settings=0x7f050002;
+        public static final int title_activity_filter=0x7f050006;
+        public static final int title_activity_main=0x7f050003;
+        public static final int title_section1=0x7f050008;
+        public static final int title_section2=0x7f050009;
+        public static final int title_section3=0x7f05000a;
     }
     public static final class style {
-        public static final int AppTheme=0x7f050000;
+        public static final int AppTheme=0x7f060000;
     }
 }

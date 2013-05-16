@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:text="Nome"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText
+        android:id="@+id/nome"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>
+
+    <TextView
+        android:text="site"
+        android:layout_height="wrap_content"	
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/site"
+        android:textIsSelectable="false"
+        android:inputType="textUri"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>
+    
+    <TextView
+        android:text="email"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/email"
+        android:textIsSelectable="false"
+        android:inputType="textEmailAddress"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>    
+    
+    <TextView
+        android:text="Telefone"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/telefone"
+        android:textIsSelectable="false"
+        android:inputType="phone"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>
+    
+    <TextView
+        android:text="Horário"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/horario"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>
+    
+    <TextView
+        android:text="Descrição"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText 
+        android:id="@+id/descricao"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"/>
+    
+    <Button
+        android:id="@+id/passo_2"
+        android:onClick="passo2"
+        android:text="Perfil"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>    
+
+</LinearLayout>

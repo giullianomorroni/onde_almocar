@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:orientation="vertical" >
+ 
+ 	<ScrollView
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+     	<LinearLayout 
+        	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+			<TextView
+		        android:text="Preço Médio (R$)"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"/>
+		    <EditText 
+		        android:id="@+id/precoMedio"
+		        android:inputType="numberDecimal"
+		        android:layout_height="wrap_content"
+		        android:layout_width="120dp"/>
+		    
+			<TextView
+		        android:text="Conforto"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"/>
+		    <RatingBar
+		        android:id="@+id/conforto"
+		        android:inputType="numberSigned"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"/>
+		    
+			<TextView
+		        android:text="Silêncio"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"/>
+		    <RatingBar
+		        android:id="@+id/silencio"
+		        android:inputType="numberSigned"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"/>
+		        
+			<TextView
+		        android:text="Ordenação dos resultados"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"/>
+		    
+		    <CheckBox 
+		        android:id="@+id/ordenarDistancia"
+		        android:layout_height="wrap_content"
+		        android:text="Distância"
+		        android:layout_width="wrap_content"/>
+		    <CheckBox 
+		        android:id="@+id/ordenarBarulho"
+		        android:text="Barulho"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"/>
+		    <CheckBox 
+		        android:id="@+id/ordenarConforto"
+		        android:text="Conforto"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"/>
+		    <CheckBox 
+		        android:id="@+id/ordenarPrecoMedio"
+		        android:text="Preço"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"/>
+		
+		    <TextView
+		        android:text="Prefências"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"/>
+		    <CheckBox
+		        android:id="@+id/somenteFavorito"
+		        android:text="Favorito"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"/>
+		    <CheckBox 
+		        android:id="@+id/somentePrimeiraVez"
+		        android:text="Primeira Vez"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"/>
+		    <CheckBox 
+		        android:id="@+id/somenteEspacoProprio"
+		        android:text="Espaço Próprio"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"/>
+
+    	</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

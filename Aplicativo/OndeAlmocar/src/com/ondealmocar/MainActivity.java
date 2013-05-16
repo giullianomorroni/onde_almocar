@@ -1,12 +1,5 @@
 package com.ondealmocar;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.ondealmocar.dominio.Caracteristica;
-import com.ondealmocar.dominio.Cliente;
-import com.ondealmocar.listener.SlidingDrawerListener;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -15,24 +8,21 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.SlidingDrawer;
+import android.widget.TextView;
+
+import com.ondealmocar.dominio.Cliente;
 
 public class MainActivity extends Activity {
 
-    @Override
+	private static String email;
+
+	@Override
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
 		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 		StrictMode.setThreadPolicy(policy);
-		setContentView(R.layout.activity_main);
-		//EditText emailInput = (EditText) findViewById(R.id.editText_email);
-		//EditText pinInput = (EditText) findViewById(R.id.editText_pin);
-		//emailInput.setText("giullianomorroni@gmail.com");
-		//pinInput.setText("123456");
-		//manter o teclado fechado...
+		setContentView(R.layout.authenticate_screen);
 		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
-		
-        setContentView(R.layout.activity_main);
     }
 
     @Override
@@ -44,16 +34,15 @@ public class MainActivity extends Activity {
     
     @Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-//	    switch (item.getItemId()) {
-//	        case R.id.menu_sincronizar:
-//	            sincronizarContatos(item.getActionView());
-//	            return true;
-//	        default:
-//	            return super.onOptionsItemSelected(item);
-//	    }
-    	return true;
+	    switch (item.getItemId()) {
+	        case R.id.tela_principal:
+	            setContentView(R.layout.main_screen);
+	            return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
 	}
-    
+
     public void registrarEstabelecimento(View view) {
     	
     }
@@ -75,29 +64,43 @@ public class MainActivity extends Activity {
 //		registrarContato(usuario);
     }
 
+    public void meuPerfil(View view) {
+    	setContentView(R.layout.client_profile);
+    }
+
+    public void telaPrincipal(View view) {
+    	setContentView(R.layout.main_screen);
+    }
+
+    public void favoritos(View view) {
+    	setContentView(R.layout.favorite_screen);
+    }
+
+    public void iniciarPesquisa(View view) {
+    	setContentView(R.layout.establishment_filter_screen);
+    }
+
+    public void novoRestaurante(View view) {
+    	setContentView(R.layout.establishment_screen);
+    }
+
     public void autenticar(View view) {
-    	setContentView(R.layout.tela_pesquisa);
-    	
-    	SlidingDrawer slidingDrawerQualidade = (SlidingDrawer) findViewById(R.id.slidingDrawerQualidade);
-		SlidingDrawer slidingDrawerPrecoMedio = (SlidingDrawer) findViewById(R.id.slidingDrawerPrecoMedio);
-		SlidingDrawer slidingDrawerQtdPessoa = (SlidingDrawer) findViewById(R.id.slidingDrawerQuantPessoas);
-		SlidingDrawer slidingDrawerSalao = (SlidingDrawer) findViewById(R.id.slidingDrawerSalaoProprio);
-		SlidingDrawer slidingDrawerTipos = (SlidingDrawer) findViewById(R.id.slidingDrawerTipos);
+    	TextView viewEmail = (TextView) findViewById(R.id.email);
+    	CharSequence text = viewEmail.getText();
+    	email = String.valueOf(text);
+    	setContentView(R.layout.main_screen);
+    }
 
-		List<SlidingDrawer> slidings = new ArrayList<SlidingDrawer>();
-		slidings.add(slidingDrawerQualidade);
-		slidings.add(slidingDrawerPrecoMedio);
-		slidings.add(slidingDrawerQtdPessoa);
-		slidings.add(slidingDrawerSalao);
-		slidings.add(slidingDrawerTipos);
-		
-		SlidingDrawerListener drawerListener = new SlidingDrawerListener(slidings);
-		slidingDrawerQualidade.setOnClickListener(drawerListener);
-		slidingDrawerPrecoMedio.setOnClickListener(drawerListener);
-		slidingDrawerQtdPessoa.setOnClickListener(drawerListener);
-		slidingDrawerSalao.setOnClickListener(drawerListener);
-		slidingDrawerTipos.setOnClickListener(drawerListener);
-
+    public void passo2(View view) {
+    	setContentView(R.layout.establishment_profile_screen);
+    }
+    
+    public void passo3(View view) {
+    	setContentView(R.layout.establishment_address_screen);
+    }
+    
+    public void cadastrarRestaurante(View view) {
+    	setContentView(R.layout.main_screen);
     }
     
     private void registrarCliente(Cliente cliente) {
@@ -118,14 +121,6 @@ public class MainActivity extends Activity {
 //		} catch (IOException e) {
 //			Toast.makeText(MainActivity.this, "Telefone inválido",Toast.LENGTH_LONG).show();
 //		}
-    }
-
-    public void pesquisarEstabelecimento(View view) {
-    	
-    }
-
-    private void pesquisarEstabelecimento(Caracteristica caracteristica, Cliente cliente) {
-    	
     }
 
 }
