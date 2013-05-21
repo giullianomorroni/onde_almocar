@@ -37,14 +37,13 @@ class Cliente():
             perfil = self.perfil_cliente.extrair_json();
     
         js_dt = json.dumps(
-          {
-    	"nome":self.nome, 
-    	"email":self.email, 
-    	"perfil_cliente": perfil,
-    	"almocos": self.almocos,
-    	"amigos": self.amigos,
-    	"favoritos": self.favoritos,
-          },
-          ensure_ascii=False
+        {
+        	"nome":self.nome, 
+        	"email":self.email, 
+        	"perfil_cliente": perfil,
+        	"almocos": self.almocos,
+        	"amigos": self.amigos,
+        	"favoritos": self.favoritos
+        }, ensure_ascii=False
         )
         return json.loads(js_dt)

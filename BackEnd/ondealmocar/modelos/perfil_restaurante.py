@@ -30,14 +30,13 @@ class PerfilRestaurante():
 
     def extrair_json(self):
         js_dt = json.dumps(
-          {
-    	"preco_medio" : self.preco_medio, 
-    	"barulho" : self.barulho, 
-    	"conforto" : self.conforto,
-    	"categoria" : self.categoria,
-    	"tipo" : self.tipo,
-    	"espaco_proprio" : self.espaco_proprio
-          },
-          ensure_ascii=False
+        {
+        	"preco_medio" : self.preco_medio, 
+        	"barulho" : self.barulho, 
+        	"conforto" : self.conforto,
+        	"categoria" : self.categoria,
+        	"tipo" : self.tipo,
+        	"espaco_proprio" : self.espaco_proprio
+        }, ensure_ascii=False
         )
         return json.loads(js_dt)

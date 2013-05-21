@@ -39,16 +39,15 @@ class Endereco():
 
     def extrair_json(self):
         js_dt = json.dumps(
-          {
-    	"logradouro" : self.logradouro, 
-    	"numero" : self.numero,
-    	"complemento" : self.complemento,
-    	"cep" : self.cep,
-    	"loc" : { "lng" : self.longitude, "lat" : self.latitude},
-    	"bairro" : self.bairro,
-    	"cidade" : self.cidade,
-    	"estado" : self.estado
-          }, 
-          ensure_ascii=False
+        {
+        	"logradouro" : self.logradouro, 
+        	"numero" : self.numero,
+        	"complemento" : self.complemento,
+        	"cep" : self.cep,
+        	"loc" : { "lng" : self.longitude, "lat" : self.latitude},
+        	"bairro" : self.bairro,
+        	"cidade" : self.cidade,
+        	"estado" : self.estado
+        }, ensure_ascii=False
         )
         return json.loads(js_dt)

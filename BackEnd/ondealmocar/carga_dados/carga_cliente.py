@@ -1,11 +1,19 @@
 # -*- coding: utf-8 -*-
 
+import sys
+
+sys.path.append('/home/giulliano/Desktop/onde_almocar/onde_almocar/modelos/')
+sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/')
+sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/modelos/')
+sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/controladores/')
+
 #configuracao de paths
-import django.core.handlers.wsgi
-from modelos.cliente import Cliente
-from modelos.perfil_cliente import PerfilCliente
+from cliente import Cliente
+from perfil_cliente import PerfilCliente
+from mongo import Mongo
 
 #inicio da carga
+mongo = Mongo();
 
 p = PerfilCliente()
 p.preco_medio = 30.0
@@ -19,8 +27,7 @@ c.almocos = [1,2,3];
 c.amigos = [1,2,3];
 c.favoritos = [1,2,3];
 json_data = c.extrair_json()
-#TODO conectar no mongo e persistir
-json_data;
+mongo.inserir_cliente(json_data);
 
 
 p = PerfilCliente()
@@ -35,8 +42,7 @@ c.almocos = [1,2,3];
 c.amigos = [1,2,3];
 c.favoritos = [1,2,3];
 json_data = c.extrair_json()
-#TODO conectar no mongo e persistir
-json_data;
+mongo.inserir_cliente(json_data);
 
 
 p = PerfilCliente()
@@ -51,8 +57,7 @@ c.almocos = [1,2,3];
 c.amigos = [];
 c.favoritos = [];
 json_data = c.extrair_json()
-#TODO conectar no mongo e persistir
-json_data;
+mongo.inserir_cliente(json_data);
 
 
 p = PerfilCliente()
@@ -67,8 +72,7 @@ c.almocos = [1,2];
 c.amigos = [];
 c.favoritos = [1];
 json_data = c.extrair_json()
-#TODO conectar no mongo e persistir
-json_data;
+mongo.inserir_cliente(json_data);
 
 
 p = PerfilCliente()
@@ -83,5 +87,4 @@ c.almocos = [3];
 c.amigos = [1];
 c.favoritos = [1,2,3];
 json_data = c.extrair_json()
-#TODO conectar no mongo e persistir
-json_data;
+mongo.inserir_cliente(json_data);

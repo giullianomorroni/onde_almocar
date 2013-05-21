@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 
 #configuracao de paths
-import os
 import sys
-import django.core.handlers.wsgi
 sys.path.append('/home/giulliano/Desktop/onde_almocar/onde_almocar/modelos/')
-
 
 
 #inicio do teste

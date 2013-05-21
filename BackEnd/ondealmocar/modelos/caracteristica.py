@@ -21,11 +21,10 @@ class Caracteristica():
 
     def extrair_json(self):
         js_dt = json.dumps(
-          {
-    	"distancia":self.distancia, 
-    	"primeira_vez":self.primeira_vez, 
-    	"favorito": self.favorito
-          },
-          ensure_ascii=False
+        {
+        	"distancia":self.distancia, 
+        	"primeira_vez":self.primeira_vez, 
+        	"favorito": self.favorito
+        }, ensure_ascii=False
         )
         return json.loads(js_dt)

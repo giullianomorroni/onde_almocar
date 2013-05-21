@@ -15,4 +15,5 @@ encoding//modelos/mongo.py=utf-8
 encoding//modelos/perfil_cliente.py=utf-8
 encoding//modelos/perfil_restaurante.py=utf-8
 encoding//modelos/restaurante.py=utf-8
+encoding//testes/test_cliente.py=utf-8
 encoding/services.py=utf-8

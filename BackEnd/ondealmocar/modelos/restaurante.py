@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import json
 from endereco import Endereco
 from perfil_restaurante import PerfilRestaurante
@@ -48,27 +49,30 @@ class Restaurante():
         _end = None
         _pf = None
         _caract = None
-    
+
         if (self.endereco != None):
             _end = self.endereco.extrair_json()
     
+        print _end
         if (self.perfil_restaurante != None):
             _pf = self.perfil_restaurante.extrair_json()
     
+        print _pf
         if (self.caracteristica != None):
             _caract = self.caracteristica.extrair_json()
+        print _caract
     
         js_dt = json.dumps(
         {
-        "nome" : self.nome,
-        "site" : self.site,
-        "telefone" : self.telefone,
-        "horario" : self.horario,
-        "descricao" : self.descricao,
-        "endereco" : _end,
-        "perfil_restaurante" : _pf,
-        "caracteristica" : _caract
-            },
-        ensure_ascii=False
+            "nome" : self.nome,
+            "site" : self.site,
+            "telefone" : self.telefone,
+            "horario" : self.horario,
+            "descricao" : self.descricao,
+            "endereco" : _end,
+            "perfil_restaurante" : _pf,
+            "caracteristica" : _caract
+        }, ensure_ascii=False
         )
+
         return json.loads(js_dt)
