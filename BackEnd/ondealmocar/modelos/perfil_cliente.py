@@ -6,16 +6,16 @@ class PerfilCliente():
     global preco_medio
     global conforto
     global barulho
-    
+
     global ordenar_distancia
     global ordenar_barulho
     global ordenar_conforto
     global ordenar_preco_medio
-    
+
     global somente_favorito
     global somente_primeira_vez
     global somente_espaco_proprio
-    
+
     #não persistir esses valores...
     global latitude
     global longitude

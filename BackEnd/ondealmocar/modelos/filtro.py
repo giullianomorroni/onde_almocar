@@ -12,7 +12,7 @@ class Filtro():
     global busca_exata
     global latitude
     global longitude
-    
+
     def __init__(self):
         self.preco_medio = None
         self.tipos = []
@@ -24,7 +24,7 @@ class Filtro():
         self.busca_exata = None
         self.latitude = 0
         self.longitude = 0
-    
+
     def montarFiltro(self, json_data):
         self.preco_medio = json_data['preco_medio']
         self.tipos = json_data['tipos']

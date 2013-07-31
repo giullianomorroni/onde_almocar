@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from pymongo import MongoClient, GEO2D
-from controladores.filtro import Filtro
 from perfil_cliente import PerfilCliente
 import json
 
@@ -14,7 +13,7 @@ class Mongo():
         self.base = conexao.onde_almocar
         self.base.restaurante.ensure_index([("loc", "2d")])
 
-    def inserir_restaurante(self, json_data):
+    def inserir_local(self, json_data):
         colecao = self.base.restaurante
         r = colecao.insert(json_data)
         return r
@@ -24,19 +23,31 @@ class Mongo():
         r = colecao.insert(json_data)
         return r
 
+    def inserir_perfil_cliente(self, json_data):
+        colecao = self.base.perfil_cliente
+        r = colecao.insert(json_data)
+        return r
+
     def pesquisar_cliente_por_email(self, emailParam):
         colecao = self.base.cliente
         r = colecao.find_one( {"email" : emailParam} )
-        print r
+        if r == None:
+            return '{"code":204, "message":"nothing"}'
         _id = r["_id"]
         r["_id"] = None
         r["id"] = str(_id)
         return r
 
-    def pesquisar_locais(self, filtro):
-        colecao = self.base.cliente
-        results = colecao.find( filtro )
-        return results
+    def pesquisar_locais(self, json_filtro):
+        colecao = self.base.restaurante
+        results = colecao.find( json_filtro )
+        locais = []
+        for r in results:
+            _id = r["_id"]
+            r["_id"] = None
+            r["id"] = str(_id)
+            locais.append(r)
+        return locais
 
     def inserir_favorito(self, json_data):
         colecao = self.base.favorito

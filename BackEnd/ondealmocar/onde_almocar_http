@@ -1,0 +1,28 @@
+
+"
+
+http://192.168.0.100:8000
+
+/autenticar/
+json="{"email":"giullianomorroni@gmail.com"}"
+curl -i -H "Accept: text/html" -H "Content-Type: text/html" -X POST -d "json={\"email\":\"giulliano@gmail.com\"}" http://localhost:8000/autenticar/
+
+
+pesquisar/locais
+json="{"email":"giullianomorroni@gmail.com"}"
+curl -i -H "Accept: text/html" -H "Content-Type: text/html" -X POST http://localhost:8000/pesquisar/locais/ -d "json={\"caracteristica\":{\"primeira_vez\":true, \"favorito\":false}}"
+
+
+
+
+
+{"caracteristica":{"primeira_vez":true, "favorito":false,"distancia":70},"perfil_restaurante":{"categoria":"prato-feito","tipo":"restaurante","espaco_proprio":true,"barulho":7,"conforto":5,"preco_medio":25}}
+
+{"loc" : {"lat":-23.568206,"lng":-46.649441}} 
+
+"nome" : "Restaurante 5",
+"site" : "www.site.com.br",
+"horario" : "8h - 22h",
+"telefone" : "11 99994444",
+"endereco" : {
+
