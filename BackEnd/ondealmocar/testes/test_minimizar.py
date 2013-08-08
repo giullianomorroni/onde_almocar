@@ -4,21 +4,22 @@
 import os
 import sys
 import django.core.handlers.wsgi
-sys.path.append('/home/giulliano/Desktop/onde_almocar/onde_almocar/modelos/')
-sys.path.append('/home/giulliano/Desktop/onde_almocar/onde_almocar/algoritmos/')
-sys.path.append('/home/giulliano/Desktop/onde_almocar/onde_almocar/carga_dados/')
+sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/modelos/')
+sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/algoritmos/')
+sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/carga_dados/')
 
 
 #inicio do teste
 from minimizar import Minimizar
 from perfil_cliente import PerfilCliente
 
+#realiza o insert no mongo
 import carga_restaurante as cr
 
 print '\nTodos os restaurantes:'
 restaurantes = cr.carga()
 for r in restaurantes:
-  print r.nome
+    print r.nome
 
 minimizar = Minimizar();
 
@@ -42,4 +43,4 @@ print '\nRestaurantes filtrados:'
 restaurantes = minimizar.executar(restaurantes, perfil_cliente)
 restaurantes = sorted(restaurantes, key=lambda r: r.pontuacao, reverse=True)
 for r in restaurantes:
-  print r.nome + ' [pontuacao: '+ str(r.pontuacao)+']' + ' [distancia: '+ str(r.caracteristica.distancia)+']'
+    print r.nome + ' [pontuacao: '+ str(r.pontuacao)+']' + ' [distancia: '+ str(r.caracteristica.distancia)+']'

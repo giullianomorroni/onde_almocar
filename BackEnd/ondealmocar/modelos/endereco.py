@@ -7,8 +7,6 @@ class Endereco():
     global numero
     global complemento
     global cep
-    global latitude
-    global longitude
     global bairro
     global cidade
     global estado
@@ -18,8 +16,6 @@ class Endereco():
         self.numero = ''
         self.complemento = ''
         self.cep = 0
-        self.latitude = 0.0
-        self.longitude = 0.0
         self.bairro = ''
         self.cidade = ''
         self.estado = ''
@@ -30,8 +26,6 @@ class Endereco():
         self.numero = aux['numero']
         self.complemento = aux['complemento']
         self.cep = aux['cep']
-        self.longitude = aux['loc']['lng']
-        self.latitude = aux['loc']['lat']
         self.bairro = aux['bairro']
         self.cidade = aux['cidade']
         self.estado = aux['estado']
@@ -44,7 +38,6 @@ class Endereco():
         	"numero" : self.numero,
         	"complemento" : self.complemento,
         	"cep" : self.cep,
-        	"loc" : { "lng" : self.longitude, "lat" : self.latitude},
         	"bairro" : self.bairro,
         	"cidade" : self.cidade,
         	"estado" : self.estado

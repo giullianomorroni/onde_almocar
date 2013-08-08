@@ -17,6 +17,8 @@ class Restaurante():
     global perfil_restaurante
     global caracteristica
     global pontuacao
+    global latitude
+    global longitude
     
     def __init__(self):
         self.nome = ''
@@ -29,6 +31,8 @@ class Restaurante():
         self.perfil_restaurante = None
         self.caracteristica = None
         self.pontuacao = 0
+        self.latitude = 0.0
+        self.longitude = 0.0
     
     def extrair_classe(self, json_data):
         aux = json.loads(json_data)
@@ -37,6 +41,8 @@ class Restaurante():
         self.telefone = aux['telefone']
         self.horario = aux['horario']
         self.descricao = aux['descricao']
+        self.longitude = aux['loc']['lng']
+        self.latitude = aux['loc']['lat']        
         _endereco = aux['endereco']
         self.endereco = Endereco().extrair_classe(_endereco)
         _pf = aux['perfil_restaurante']
@@ -69,6 +75,7 @@ class Restaurante():
             "telefone" : self.telefone,
             "horario" : self.horario,
             "descricao" : self.descricao,
+            "loc" : { "lng" : self.longitude, "lat" : self.latitude},
             "endereco" : _end,
             "perfil_restaurante" : _pf,
             "caracteristica" : _caract

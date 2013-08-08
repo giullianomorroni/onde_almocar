@@ -38,32 +38,22 @@ class Mongo():
         r["id"] = str(_id)
         return r
 
-    def pesquisar_locais(self, json_filtro):
-        colecao = self.base.restaurante
-        results = colecao.find( json_filtro )
-        locais = []
-        for r in results:
-            _id = r["_id"]
-            r["_id"] = None
-            r["id"] = str(_id)
-            locais.append(r)
-        return locais
-
     def inserir_favorito(self, json_data):
         colecao = self.base.favorito
         r = colecao.insert(json_data)
         return r
 
-    def pesquisar_restaurante(self, filtro):
+    def pesquisar_locais(self, filtro):
         CIRCUNFERENCIA_TERRA = 6371
         METROS = 1000
+
         r = self.base.command(
-    	([
-    	  ('geoNear', 'restaurante'),
-    	  ('near', [filtro.longitude, filtro.latitude]),
-    	  ('maxDistance', 1000 / CIRCUNFERENCIA_TERRA),
-    	  ('distanceMultiplier', CIRCUNFERENCIA_TERRA * METROS),
-              ('spherical', True),
-              ('sort', 'dis')
-    	]))
+    	[  ('geoNear', 'restaurante'),
+    	   ('near', [ filtro['latitude'], filtro['longitude'] ]),
+    	   ('maxDistance', (1000 / CIRCUNFERENCIA_TERRA)) ,
+    	   ('distanceMultiplier', (CIRCUNFERENCIA_TERRA * METROS)),
+           ('spherical', 'true'),
+           ('sort', 'dis')
+    	])
+
         return r

@@ -5,7 +5,6 @@ import sys
 sys.path.append('/home/giulliano/Desktop/onde_almocar/onde_almocar/modelos/')
 sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/')
 sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/modelos/')
-sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/controladores/')
 
 #configuracao de paths
 from cliente import Cliente

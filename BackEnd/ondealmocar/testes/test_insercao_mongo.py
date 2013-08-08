@@ -6,7 +6,6 @@ import sys
 import django.core.handlers.wsgi
 sys.path.append('/home/giulliano/Desktop/onde_almocar/onde_almocar/BackEnd/modelos')
 sys.path.append('/home/giulliano/Desktop/onde_almocar/onde_almocar/BackEnd/algoritmos/')
-sys.path.append('/home/giulliano/Desktop/onde_almocar/onde_almocar/BackEnd/controladores/')
 
 #inicio do teste
 from mongo import Mongo

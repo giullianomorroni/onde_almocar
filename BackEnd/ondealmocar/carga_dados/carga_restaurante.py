@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 import sys
 
-sys.path.append('/home/giulliano/Desktop/onde_almocar/onde_almocar/modelos/')
+sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/modelos/')
 sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/')
 sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/modelos/')
-sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/controladores/')
 
 #configuracao de paths
 from restaurante import Restaurante
@@ -22,14 +21,14 @@ r.site = 'www.site.com.br'
 r.telefone = '11 99994444'
 r.horario = '8h - 22h'
 r.descricao = unicode('Descrição....','utf-8')
+r.latitude = -23.568206
+r.longitude = -46.649441
 
 e = Endereco()
 e.logradouro = unicode('Av. Brg. Luís Antônio','utf-8')
 e.numero = '2250'
 e.complemento = ''
 e.cep = '01418100'
-e.latitude = -23.568206
-e.longitude = -46.649441
 e.bairro = 'Jardim Paulista'
 e.cidade = unicode('São Paulo','utf-8')
 e.estado = unicode('São Paulo','utf-8')
@@ -49,7 +48,7 @@ c.distancia = 150.00
 c.primeira_vez = False
 c.favorito = True
 r.caracteristica = c
-mongo.inserir_restaurante(r.extrair_json())
+mongo.inserir_local(r.extrair_json())
 
 
 
@@ -61,14 +60,14 @@ r.site = 'www.site.com.br'
 r.telefone = '11 99994444'
 r.horario = '8h - 22h'
 r.descricao = unicode('Descrição....','utf-8')
+r.latitude = -23.567606
+r.longitude = -46.650985
 
 e = Endereco()
 e.logradouro = 'Alameda Santos'
 e.numero = '760'
 e.complemento = ''
 e.cep = '01418100'
-e.latitude = -23.567606
-e.longitude = -46.650985
 e.bairro = 'Jardim Paulista'
 e.cidade = unicode('São Paulo','utf-8')
 e.estado = unicode('São Paulo','utf-8')
@@ -88,7 +87,7 @@ c.distancia = 50.00
 c.primeira_vez = True
 c.favorito = False
 r.caracteristica = c
-mongo.inserir_restaurante(r.extrair_json())
+mongo.inserir_local(r.extrair_json())
 
 
 
@@ -105,14 +104,14 @@ r.site = 'www.site.com.br'
 r.telefone = '11 99994444'
 r.horario = '8h - 22h'
 r.descricao = unicode('Descrição....','utf-8')
+r.latitude = -23.567144
+r.longitude = -46.647348
 
 e = Endereco()
 e.logradouro = 'R. Cincinato Braga'
 e.numero = '388'
 e.complemento = ''
 e.cep = '01333010'
-e.latitude = -23.567144
-e.longitude = -46.647348
 e.bairro = 'Bela Vista'
 e.cidade = unicode('São Paulo','utf-8')
 e.estado = unicode('São Paulo','utf-8')
@@ -132,7 +131,7 @@ c.distancia = 601.20
 c.primeira_vez = True
 c.favorito = False
 r.caracteristica = c
-mongo.inserir_restaurante(r.extrair_json())
+mongo.inserir_local(r.extrair_json())
 
 
 
@@ -144,14 +143,14 @@ r.site = 'www.site.com.br'
 r.telefone = '11 99994444'
 r.horario = '8h - 22h'
 r.descricao = unicode('Descrição....','utf-8')
+r.latitude = -23.567360
+r.longitude = -46.649408
 
 e = Endereco()
 e.logradouro = 'Av Paulista'
 e.numero = '615'
 e.complemento = ''
 e.cep = '01311000'
-e.latitude = -23.567360
-e.longitude = -46.649408
 e.bairro = 'Bela Vista'
 e.cidade = unicode('São Paulo','utf-8')
 e.estado = unicode('São Paulo','utf-8')
@@ -171,7 +170,7 @@ c.distancia = 400.00
 c.primeira_vez = True
 c.favorito = True
 r.caracteristica = c
-mongo.inserir_restaurante(r.extrair_json())
+mongo.inserir_local(r.extrair_json())
 
 
 
@@ -187,14 +186,14 @@ r.site = 'www.site.com.br'
 r.telefone = '11 99994444'
 r.horario = '8h - 22h'
 r.descricao = unicode('Descrição....','utf-8')
+r.latitude = -23.565118
+r.longitude = -46.652069
 
 e = Endereco()
 e.logradouro = 'Av Paulista'
 e.numero = '1000'
 e.complemento = ''
 e.cep = '01311000'
-e.latitude = -23.565118
-e.longitude = -46.652069
 e.bairro = 'Bela Vista'
 e.cidade = unicode('São Paulo','utf-8')
 e.estado = unicode('São Paulo','utf-8')
@@ -214,7 +213,7 @@ c.distancia = 700.00
 c.primeira_vez = True
 c.favorito = False
 r.caracteristica = c
-mongo.inserir_restaurante(r.extrair_json())
+mongo.inserir_local(r.extrair_json())
 
 
 
@@ -228,14 +227,14 @@ r.site = 'www.site.com.br'
 r.telefone = '11 99994444'
 r.horario = '8h - 22h'
 r.descricao = unicode('Descrição....','utf-8')
+r.latitude = -23.568206
+r.longitude = -46.649441
 
 e = Endereco()
 e.logradouro = unicode('Av. Brg. Luís Antônio','utf-8')
 e.numero = '2300'
 e.complemento = ''
 e.cep = '01418100'
-e.latitude = -23.568206
-e.longitude = -46.649441
 e.bairro = 'Jardim Paulista'
 e.cidade = unicode('São Paulo','utf-8')
 e.estado = unicode('São Paulo','utf-8')
@@ -255,5 +254,5 @@ c.distancia = 70.00
 c.primeira_vez = True
 c.favorito = False
 r.caracteristica = c
-mongo.inserir_restaurante(r.extrair_json())
+mongo.inserir_local(r.extrair_json())
 
