@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import sys
 
-sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/modelos/')
-sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/')
-sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/modelos/')
+sys.path.append('../modelos/')
+#sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/')
+#sys.path.append('/run/media/giulliano/Desenvolvimento/workspace/python/onde_almocar/BackEnd/ondealmocar/modelos/')
 
 #configuracao de paths
 from restaurante import Restaurante
